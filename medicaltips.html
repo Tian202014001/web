@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script> -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hospital_Info</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <!-- <script>
+        const firebaseConfig = {
+       apiKey: "AIzaSyCtvGmVou-1dnggMDRAgMphkPo5mp_PnC0",
+       authDomain: "hospitalinfo-611b4.firebaseapp.com",
+       databaseURL: "https://hospitalinfo-611b4-default-rtdb.firebaseio.com",
+       projectId: "hospitalinfo-611b4",
+       storageBucket: "hospitalinfo-611b4.appspot.com",
+       messagingSenderId: "854503542791",
+       appId: "1:854503542791:web:cd4e674dd61d06d59f5aa2",
+       measurementId: "G-JB3TRENCJF"
+     };
+   -->
+     <!-- firebase.initializeApp(firebaseConfig);
+     </script> -->
+     <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyCytW3S4VuyP4DZh9jZ_SoaD-kVjvvDtBQ",
+        authDomain: "hospitalinfo22.firebaseapp.com",
+        databaseURL: "https://hospitalinfo22-default-rtdb.firebaseio.com",
+        projectId: "hospitalinfo22",
+        storageBucket: "hospitalinfo22.appspot.com",
+        messagingSenderId: "989350943392",
+        appId: "1:989350943392:web:2bb2b6cfc01436a25e47c5",
+        measurementId: "G-YGBVY3CWR4"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="assets/comment.js"></script>
+    <!-- =======================================================
+  * Template Name: Medilab - v4.7.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+                <i class="bi bi-phone"></i> +1 5589 55488 55
+            </div>
+            <div class="d-none d-lg-flex social-links align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <img src="img/logo.png" height="50">
+            <h1 class="logo me-auto"><a href="index.html">Hospital_Info</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="about.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+
+                    <li><a class="nav-link scrollto" href="hospitals.html">Hospitals</a></li>
+
+
+
+                    <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+                    <li><a class="nav-link scrollto active" href="medicaltips.html">Medical Tips</a></li>
+                    <!-- <li><a class=" scrollto" href="#about">
+                            <form class="d-flex  margin-left:30px margin-right:30px">
+
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </a></li> -->
+                </ul>
+
+
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="apoointment.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
+                Appointment</a>
+
+        </div>
+    </header><!-- End Header -->
+
+    </div>
+    <section id="about" class="about">
+        <div class="container mt-5"data-aos="fade-up"><br>
+            <div class="section-title">
+                <h2>Medical Tips</h2>
+                
+              </div>
+        
+                <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. </p> -->
+            </div>
+            <section id="services" class="services section-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="row featurette">
+
+                        <div class="col-md-7 order-md-1">
+                            <h2 class="featurette-heading">Strengthening Lower Back: 8 Best Workouts That Can Help
+                                You<span class="text-muted">
+                                    .</span></h2>
+                    <p class="text1">Pathogen control in nursing may have a major impact for both your patients and
+                        yourself – nurses aren’t immune to every infection that lurks on the job. According to the
+                        Centers for Disease Control and Prevention, <span class="moreText1">5% of all patients admitted
+                            to a hospital for
+                            whatever reason may pick up an infection while there. As part of their licensing programs,
+                            nurses learn about infection prevention and control measures.
+                            <br> <b>The Basics</b>
+                            <br>
+                            Never let your hectic schedule or fatigue get in the way of properly washing your hands,
+                            cleaning tools and equipment, or collaborating with the rest of the team to guarantee a
+                            sanitized and safe atmosphere. There are specialized companies which are dedicated
+                            infection
+                            preventionists and who can assess and evaluate your workplace and then review and revise
+                            specific policies to assist in efficient infection control.Nurses are
+                            among the first line of defense against illness; thus, they must be meticulous about
+                            washing
+                            their hands and using hand sanitizers (if soap and water are not available) on a regular
+                            basis. Proper handwashing is one of the most effective methods to keep yourself, your
+                            family, and others safe. Nurses should follow a six-step procedure: 1) wet the hands 2)
+                            lather with soap on the backs of the hands, between the fingers and under the nails 3)
+                            rub
+                            the hands for at least twenty seconds 4) rinse well with running water 5) dry hands on a
+                            clean towel 6) use dry paper towel to switch off the tap and touch the handle of the
+                            door.
+                            Hand cleanliness is the most effective way to avoid catching and spreading infectious
+                            germs.
+                            Most centers advise gloves to be used only when needed (when in contact with bodily
+                            fluids)
+                            and that they are removed as soon as possible once the task is completed. <br>
+                            <br> <b>Techinque</b>
+                            <br>
+                            Never let your hectic schedule or fatigue get in the way of properly washing your hands,
+                            cleaning tools and equipment, or collaborating with the rest of the team to guarantee a
+                            sanitized and safe atmosphere. There are specialized companies which are dedicated
+                            infection
+                            preventionists and who can assess and evaluate your workplace and then review and revise
+                            specific policies to assist in efficient infection control.Nurses are
+                            among the first line of defense against illness; thus, they must be meticulous about
+                            washing
+                            their hands and using hand sanitizers (if soap and water are not available) on a regular
+                            basis. Proper handwashing is one of the most effective methods to keep yourself, your
+                            family, and others safe. Nurses should follow a six-step procedure: 1) wet the hands 2)
+                            lather with soap on the backs of the hands, between the fingers and under the nails 3)
+                            rub
+                            the hands for at least twenty seconds 4) rinse well with running water 5) dry hands on a
+                            clean towel 6) use dry paper towel to switch off the tap and touch the handle of the
+                            door.
+                            Hand cleanliness is the most effective way to avoid catching and spreading infectious
+                            germs.
+                            Most centers advise gloves to be used only when needed (when in contact with bodily
+                            fluids)
+                            and that they are removed as soon as possible once the task is completed. <br>
+                            <br> <b>At Home</b>
+                            <br>
+                            It is equally important for nurses to be vigilant at home. They must remain at home when
+                            ill to keep infections out of the healthcare environment. It is a good idea for nurses
+                            to have more than one pair of work shoes on rotation and to leave these in the car when
+                            arriving home. If they need to be washed, make sure to effectively clean your hands
+                            before and after touching them. Also, for non-work-related activities, you should have a
+                            separate pair of shoes. Before interacting with your family, take off your work clothes
+                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                            Infection control goes both ways and nurses need to be diligent with the basics and
+                            practice safety precautions for themselves and their patients. <br>
+
+                        </span>
+
+
+                    </p>
+
+                    <button class="read-more-btn1">Read More</button>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="img/img10.jpg" width="450" heigth="600">
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+
+            <section id="services" class="services section-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="row featurette">
+
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading">Strengthening Lower Back: 8 Best Workouts That Can Help
+                                You<span class="text-muted">
+                                    .</span></h2>
+                            <p class="text2">Pathogen control in nursing may have a major impact for both your patients
+                                and
+                                yourself – nurses aren’t immune to every infection that lurks on the job. According to
+                                the
+                                Centers for Disease Control and Prevention, <span class="moreText2">5% of all patients
+                                    admitted to a hospital for
+                                    whatever reason may pick up an infection while there. As part of their licensing
+                                    programs,
+                                    nurses learn about infection prevention and control measures.
+                                    <br> <b>The Basics</b>
+                                    <br>
+                                    Never let your hectic schedule or fatigue get in the way of properly washing your
+                                    hands,
+                                    cleaning tools and equipment, or collaborating with the rest of the team to
+                                    guarantee a
+                                    sanitized and safe atmosphere. There are specialized companies which are dedicated
+                                    infection
+                                    preventionists and who can assess and evaluate your workplace and then review and
+                                    revise
+                                    specific policies to assist in efficient infection control.Nurses are
+                                    among the first line of defense against illness; thus, they must be meticulous about
+                                    washing
+                                    their hands and using hand sanitizers (if soap and water are not available) on a
+                                    regular
+                                    basis. Proper handwashing is one of the most effective methods to keep yourself,
+                                    your
+                                    family, and others safe. Nurses should follow a six-step procedure: 1) wet the hands
+                                    2)
+                                    lather with soap on the backs of the hands, between the fingers and under the nails
+                                    3)
+                                    rub
+                                    the hands for at least twenty seconds 4) rinse well with running water 5) dry hands
+                                    on a
+                                    clean towel 6) use dry paper towel to switch off the tap and touch the handle of the
+                                    door.
+                                    Hand cleanliness is the most effective way to avoid catching and spreading
+                                    infectious
+                                    germs.
+                                    Most centers advise gloves to be used only when needed (when in contact with bodily
+                                    fluids)
+                                    and that they are removed as soon as possible once the task is completed. <br>
+                                    <br> <b>Techinque</b>
+                                    <br>
+                                    Never let your hectic schedule or fatigue get in the way of properly washing your
+                                    hands,
+                                    cleaning tools and equipment, or collaborating with the rest of the team to
+                                    guarantee a
+                                    sanitized and safe atmosphere. There are specialized companies which are dedicated
+                                    infection
+                                    preventionists and who can assess and evaluate your workplace and then review and
+                                    revise
+                                    specific policies to assist in efficient infection control.Nurses are
+                                    among the first line of defense against illness; thus, they must be meticulous about
+                                    washing
+                                    their hands and using hand sanitizers (if soap and water are not available) on a
+                                    regular
+                                    basis. Proper handwashing is one of the most effective methods to keep yourself,
+                                    your
+                                    family, and others safe. Nurses should follow a six-step procedure: 1) wet the hands
+                                    2)
+                                    lather with soap on the backs of the hands, between the fingers and under the nails
+                                    3)
+                                    rub
+                                    the hands for at least twenty seconds 4) rinse well with running water 5) dry hands
+                                    on a
+                                    clean towel 6) use dry paper towel to switch off the tap and touch the handle of the
+                                    door.
+                                    Hand cleanliness is the most effective way to avoid catching and spreading
+                                    infectious
+                                    germs.
+                                    Most centers advise gloves to be used only when needed (when in contact with bodily
+                                    fluids)
+                                    and that they are removed as soon as possible once the task is completed. <br>
+                                    <br> <b>At Home</b>
+                                    <br>
+                                    It is equally important for nurses to be vigilant at home. They must remain at home
+                                    when
+                                    ill to keep infections out of the healthcare environment. It is a good idea for
+                                    nurses
+                                    to have more than one pair of work shoes on rotation and to leave these in the car
+                                    when
+                                    arriving home. If they need to be washed, make sure to effectively clean your hands
+                                    before and after touching them. Also, for non-work-related activities, you should
+                                    have a
+                                    separate pair of shoes. Before interacting with your family, take off your work
+                                    clothes
+                                    and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                    Infection control goes both ways and nurses need to be diligent with the basics and
+                                    practice safety precautions for themselves and their patients. <br>
+
+                                </span>
+
+
+                            </p>
+
+                            <button class="read-more-btn2">Read More</button>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img src="img/img11.jpg" width="380" heigth="600">
+                            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+                <section id="services" class="services section-bg">
+                    <div class="container" data-aos="fade-up">
+                        <div class="row featurette">
+                            <div class="col-md-7 order-md-1">
+                                <h2 class="featurette-heading">5 Tips for Taking Care of Your Body | Vitamins vs
+                                    Minerals<span class="text-muted">
+                                        .</span></h2>
+                                <p class="text3">Pathogen control in nursing may have a major impact for both your
+                                    patients
+                                    and
+                                    yourself – nurses aren’t immune to every infection that lurks on the job. According
+                                    to
+                                    the
+                                    Centers for Disease Control and Prevention, <span class="moreText3">5% of all
+                                        patients
+                                        admitted to a hospital for
+                                        whatever reason may pick up an infection while there. As part of their licensing
+                                        programs,
+                                        nurses learn about infection prevention and control measures.
+                                        <br> <b>The Basics</b>
+                                        <br>
+                                        Never let your hectic schedule or fatigue get in the way of properly washing
+                                        your
+                                        hands,
+                                        cleaning tools and equipment, or collaborating with the rest of the team to
+                                        guarantee a
+                                        sanitized and safe atmosphere. There are specialized companies which are
+                                        dedicated
+                                        infection
+                                        preventionists and who can assess and evaluate your workplace and then review
+                                        and
+                                        revise
+                                        specific policies to assist in efficient infection control.Nurses are
+                                        among the first line of defense against illness; thus, they must be meticulous
+                                        about
+                                        washing
+                                        their hands and using hand sanitizers (if soap and water are not available) on a
+                                        regular
+                                        basis. Proper handwashing is one of the most effective methods to keep yourself,
+                                        your
+                                        family, and others safe. Nurses should follow a six-step procedure: 1) wet the
+                                        hands
+                                        2)
+                                        lather with soap on the backs of the hands, between the fingers and under the
+                                        nails
+                                        3)
+                                        rub
+                                        the hands for at least twenty seconds 4) rinse well with running water 5) dry
+                                        hands
+                                        on a
+                                        clean towel 6) use dry paper towel to switch off the tap and touch the handle of
+                                        the
+                                        door.
+                                        Hand cleanliness is the most effective way to avoid catching and spreading
+                                        infectious
+                                        germs.
+                                        Most centers advise gloves to be used only when needed (when in contact with
+                                        bodily
+                                        fluids)
+                                        and that they are removed as soon as possible once the task is completed. <br>
+                                        <br> <b>Techinque</b>
+                                        <br>
+                                        Never let your hectic schedule or fatigue get in the way of properly washing
+                                        your
+                                        hands,
+                                        cleaning tools and equipment, or collaborating with the rest of the team to
+                                        guarantee a
+                                        sanitized and safe atmosphere. There are specialized companies which are
+                                        dedicated
+                                        infection
+                                        preventionists and who can assess and evaluate your workplace and then review
+                                        and
+                                        revise
+                                        specific policies to assist in efficient infection control.Nurses are
+                                        among the first line of defense against illness; thus, they must be meticulous
+                                        about
+                                        washing
+                                        their hands and using hand sanitizers (if soap and water are not available) on a
+                                        regular
+                                        basis. Proper handwashing is one of the most effective methods to keep yourself,
+                                        your
+                                        family, and others safe. Nurses should follow a six-step procedure: 1) wet the
+                                        hands
+                                        2)
+                                        lather with soap on the backs of the hands, between the fingers and under the
+                                        nails
+                                        3)
+                                        rub
+                                        the hands for at least twenty seconds 4) rinse well with running water 5) dry
+                                        hands
+                                        on a
+                                        clean towel 6) use dry paper towel to switch off the tap and touch the handle of
+                                        the
+                                        door.
+                                        Hand cleanliness is the most effective way to avoid catching and spreading
+                                        infectious
+                                        germs.
+                                        Most centers advise gloves to be used only when needed (when in contact with
+                                        bodily
+                                        fluids)
+                                        and that they are removed as soon as possible once the task is completed. <br>
+                                        <br> <b>At Home</b>
+                                        <br>
+                                        It is equally important for nurses to be vigilant at home. They must remain at
+                                        home
+                                        when
+                                        ill to keep infections out of the healthcare environment. It is a good idea for
+                                        nurses
+                                        to have more than one pair of work shoes on rotation and to leave these in the
+                                        car
+                                        when
+                                        arriving home. If they need to be washed, make sure to effectively clean your
+                                        hands
+                                        before and after touching them. Also, for non-work-related activities, you
+                                        should
+                                        have a
+                                        separate pair of shoes. Before interacting with your family, take off your work
+                                        clothes
+                                        and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                        Infection control goes both ways and nurses need to be diligent with the basics
+                                        and
+                                        practice safety precautions for themselves and their patients. <br>
+
+                                    </span>
+
+
+                                </p>
+
+                                <button class="read-more-btn3">Read More</button>
+                            </div>
+                            <div class="col-md-5 order-md-1">
+                                <img src="img/img13.jpg" width="450" heigth="600">
+                                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">About Prompt Health Care in Grovetown, GA<span
+                                            class="text-muted">
+                                            .</span></h2>
+                                    <p class="text4">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText4">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn4">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img12.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-1">
+                                    <h2 class="featurette-heading">Recovery From Home: How Outpatient Rehab Works and
+                                        Its
+                                        Benefits<span class="text-muted">
+                                            .</span></h2>
+                                    <p class="text5">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText5">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn5">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img14.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                    dy=".3em">500x500</text>
+            </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">5 Clear Signs You Need New Glasses<span
+                                            class="text-muted">
+                                            .</span></h2>
+                                    <p class="text6">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText6">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn6">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img17.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                dy=".3em">500x500</text>
+        </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-1">
+                                    <h2 class="featurette-heading">Slip and Fall at Work: How to Find the Best Workplace
+                                        Injury Law Firm<span class="text-muted">
+                                            .</span></h2>
+                                    <p class="text7">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText7">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn7">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img18.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                dy=".3em">500x500</text>
+        </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">You’re Doing it Wrong: How to Use Hand Sanitizer in
+                                        the
+                                        Right Way<span class="text-muted">
+                                            .</span></h2>
+                                    <p class="text8">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText8">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn8">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img15.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                dy=".3em">500x500</text>
+        </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-1">
+                                    <h2 class="featurette-heading">Traps Workout: Exercises, Anatomy and Training
+                                        Features<span class="text-muted">
+                                            .</span></h2>
+                                    <p class="text9">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText9">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn9">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img16.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                dy=".3em">500x500</text>
+        </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">7 Easy Steps to Better Eye Health<span
+                                            class="text-muted">
+                                            .</span></h2>
+                                    <p class="text10">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText10">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn10">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img19.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                dy=".3em">500x500</text>
+        </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-1">
+                                    <h2 class="featurette-heading">Orthodontics: How A Dental Procedure is Changing
+                                        Lives<span class="text-muted">
+                                            .</span></h2>
+                                    <p class="text11">control in nursing may have a major impact for both your patients
+                                        and
+                                        yourself – nurses aren’t immune to every infection that lurks on the job.
+                                        According
+                                        to the
+                                        Centers for Disease Control and Prevention, <span class="moreText11">5% of all
+                                            patients admitted to a hospital for
+                                            whatever reason may pick up an infection while there. As part of their
+                                            licensing
+                                            programs,
+                                            nurses learn about infection prevention and control measures.
+                                            <br> <b>The Basics</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>Techinque</b>
+                                            <br>
+                                            Never let your hectic schedule or fatigue get in the way of properly washing
+                                            your hands,
+                                            cleaning tools and equipment, or collaborating with the rest of the team to
+                                            guarantee a
+                                            sanitized and safe atmosphere. There are specialized companies which are
+                                            dedicated
+                                            infection
+                                            preventionists and who can assess and evaluate your workplace and then
+                                            review
+                                            and revise
+                                            specific policies to assist in efficient infection control.Nurses are
+                                            among the first line of defense against illness; thus, they must be
+                                            meticulous
+                                            about
+                                            washing
+                                            their hands and using hand sanitizers (if soap and water are not available)
+                                            on a
+                                            regular
+                                            basis. Proper handwashing is one of the most effective methods to keep
+                                            yourself,
+                                            your
+                                            family, and others safe. Nurses should follow a six-step procedure: 1) wet
+                                            the
+                                            hands 2)
+                                            lather with soap on the backs of the hands, between the fingers and under
+                                            the
+                                            nails 3)
+                                            rub
+                                            the hands for at least twenty seconds 4) rinse well with running water 5)
+                                            dry
+                                            hands on a
+                                            clean towel 6) use dry paper towel to switch off the tap and touch the
+                                            handle of
+                                            the
+                                            door.
+                                            Hand cleanliness is the most effective way to avoid catching and spreading
+                                            infectious
+                                            germs.
+                                            Most centers advise gloves to be used only when needed (when in contact with
+                                            bodily
+                                            fluids)
+                                            and that they are removed as soon as possible once the task is completed.
+                                            <br>
+                                            <br> <b>At Home</b>
+                                            <br>
+                                            It is equally important for nurses to be vigilant at home. They must remain
+                                            at
+                                            home when
+                                            ill to keep infections out of the healthcare environment. It is a good idea
+                                            for
+                                            nurses
+                                            to have more than one pair of work shoes on rotation and to leave these in
+                                            the
+                                            car when
+                                            arriving home. If they need to be washed, make sure to effectively clean
+                                            your
+                                            hands
+                                            before and after touching them. Also, for non-work-related activities, you
+                                            should have a
+                                            separate pair of shoes. Before interacting with your family, take off your
+                                            work
+                                            clothes
+                                            and have a shower. Wash and sanitize those clothes as soon as possible.
+
+                                            Infection control goes both ways and nurses need to be diligent with the
+                                            basics
+                                            and
+                                            practice safety precautions for themselves and their patients. <br>
+
+                                        </span>
+
+
+                                    </p>
+
+                                    <button class="read-more-btn11">Read More</button>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img src="img/img20.jpg" width="380" heigth="600">
+                                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                dy=".3em">500x500</text>
+        </svg> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="featurette-divider">
+                    <!-- <section id="services" class="services section-bg">
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row featurette">
+                               
+                                <div class="col-md-12 ">
+                                     <div class="card"> -->
+                                    <!-- <div class="row">
+                                        <div class="col-2"> <img src="img/comment.jpg" width="70"
+                                                class="rounded-circle mt-2"> </div>
+                                        <div class="col-10">
+                                            <div class="col-md-10 form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                                                  data-msg="Please enter at least 4 chars">
+                                                <div class="validate"></div>
+                                              </div>
+                                              <div class="col-md-10 form-group mt-3 mt-md-0">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                                  data-rule="email" data-msg="Please enter a valid email">
+                                                <div class="validate"></div>
+                                              </div>
+                                            <div class="comment-box ml-2">
+                                                <h4>Add a comment</h4>
+                                                <div class="rating"> <input type="radio" name="rating" value="5"
+                                                        id="5"><label for="5">☆</label> <input type="radio"
+                                                        name="rating" value="4" id="4"><label for="4">☆</label>
+                                                    <input type="radio" name="rating" value="3"><label for="3">☆</label>
+                                                    <input type="radio" name="rating" value="2" id="2"><label
+                                                        for="2">☆</label> <input type="radio" name="rating" value="1"
+                                                        id="1"><label for="1">☆</label>
+                                                </div>
+                                                <div class="comment-area"> <textarea class="form-control" id="comment"
+                                                        placeholder="what is your view?" rows="4"></textarea> </div>
+                                                <div class="comment-btns mt-2">
+                                                    <div class="row">
+                                                        <div class="col-6" mx-6>
+                                                            <div class="pull-left"> <button
+                                                                    class="btn btn-success btn-sm" onclick="show2()">Send</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="pull-right"> <button
+                                                                    class="btn btn-danger send btn-sm">cancel <i
+                                                                        class="fa fa-long-arrow-right "></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </section>  -->
+    <div class="container">
+        <div class="section-title"></div>  <br>
+        <br>
+        <!-- ************************************ -->
+        
+        <div class="col-sm-5 col-md-6 col-12 pb-4">
+    
+            <h1>Comments</h1>
+            <!-- <button type="button" id="post" class="downloadButt" onclick="FetchAllComments()">Load Comment</button> -->
+    
+            <!-- <script src="js/comment.js"></script> -->
+    
+            <!-- <ul id="commentList" style="color: aliceblue;">
+            </ul> -->
+    
+            <div id="commentList" style="color:blue">
+    
+            </div>
+    
+        </div>
+    
+        <!-- ***************************** -->
+        <h5>Ask a questtion?</h5>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. </p> -->
+    </div>
+    <div class="container"> 
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. </p> -->
+        
+              <div class="col-lg-12 mt-5 mt-lg-0">
+      
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input  class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <!-- <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div> -->
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" id="comment" rows="5" placeholder="Ask a question?" required></textarea>
+                  </div>
+                   <div class="my-3">
+                    <!-- <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                  </div> 
+                  <div class="text-center"><button class="btn btn-outline-primary"   type="submit" onclick="store_comment()">Send Message</button></div>
+                </form>
+      
+              </div>
+      
+            </div>
+      <!-- <a href="comment.html"> <div><button class="btn-primary"   type="submit"> VIew All Comment</button></div></a> -->
+
+  
+    <!-- ======= Footer ======= -->
+    <section>
+        <footer id="footer">
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>Medilab</h3>
+                            <p>
+                                A108 Adam Street <br>
+                                New York, NY 535022<br>
+                                United States <br><br>
+                                <strong>Phone:</strong> +1 5589 55488 55<br>
+                                <strong>Email:</strong> info@example.com<br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product
+                                        Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-newsletter">
+                            <h4>Join Our Newsletter</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-md-flex py-4">
+
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        <!-- All the links in the footer should remain intact. -->
+                        <!-- You can delete the links only if you purchased the pro version. -->
+                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </section><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
